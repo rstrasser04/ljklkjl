@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-notesapp-dev-140210-authRole",
+      "UnauthRoleArn": "arn:aws:iam::076005434014:role/amplify-notesapp-dev-140210-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::076005434014:role/amplify-notesapp-dev-140210-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-notesapp-dev-140210-deployment",
+      "UnauthRoleName": "amplify-notesapp-dev-140210-unauthRole",
+      "StackName": "amplify-notesapp-dev-140210",
+      "StackId": "arn:aws:cloudformation:us-east-2:076005434014:stack/amplify-notesapp-dev-140210/4b985ff0-f918-11ea-9727-0249de0bf3ca",
+      "AmplifyAppId": "dlnef4n8gdie5"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dlnef4n8gdie5",
+          "type": "manual"
+        }
+      },
+      "auth": {
+        "notesapp25f12cb3": {}
+      }
+    }
+  }
+}

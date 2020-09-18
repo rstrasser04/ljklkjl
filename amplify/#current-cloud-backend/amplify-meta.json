@@ -1,0 +1,77 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-notesapp-dev-140210-authRole",
+      "UnauthRoleArn": "arn:aws:iam::076005434014:role/amplify-notesapp-dev-140210-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::076005434014:role/amplify-notesapp-dev-140210-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-notesapp-dev-140210-deployment",
+      "UnauthRoleName": "amplify-notesapp-dev-140210-unauthRole",
+      "StackName": "amplify-notesapp-dev-140210",
+      "StackId": "arn:aws:cloudformation:us-east-2:076005434014:stack/amplify-notesapp-dev-140210/4b985ff0-f918-11ea-9727-0249de0bf3ca",
+      "AmplifyAppId": "dlnef4n8gdie5"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesapp-dev-140210-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2020-09-17T19:32:14.159Z",
+      "output": {},
+      "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+    }
+  },
+  "auth": {
+    "notesapp25f12cb3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesapp-dev-140210-deployment/amplify-cfn-templates/auth/notesapp25f12cb3-cloudformation-template.yml",
+        "logicalId": "authnotesapp25f12cb3"
+      },
+      "lastPushTimeStamp": "2020-09-17T19:32:14.161Z",
+      "output": {
+        "AppClientSecret": "1hocnmslnlq3h3amsrda4o5g7cbv0iesqnionhmv5nv6vjuindbt",
+        "UserPoolId": "us-east-2_ePUHRaQa8",
+        "AppClientIDWeb": "6hhv7eq69g43np05ki92r7q3b1",
+        "AppClientID": "6brpdho7n5diuoa42hngrrenvf",
+        "IdentityPoolId": "us-east-2:af91124d-13b4-4260-aad4-cdf3ff9c2d5e",
+        "IdentityPoolName": "notesapp25f12cb3_identitypool_25f12cb3__dev",
+        "UserPoolName": "notesapp25f12cb3_userpool_25f12cb3"
+      },
+      "lastPushDirHash": "EFf6q5XSt+vw0G+MK0nI2+P+H/U="
+    }
+  },
+  "api": {
+    "notesapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authnotesapp25f12cb3"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "mttaym7qtrdonpe7baxohbwfei",
+        "GraphQLAPIEndpointOutput": "https://a2w2vsspojbl3habfua4zxckxq.appsync-api.us-east-2.amazonaws.com/graphql"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesapp-dev-140210-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apinotesapp"
+      },
+      "lastPushTimeStamp": "2020-09-17T19:32:15.357Z",
+      "lastPushDirHash": "RsLm5+xYnfL61U8mABZJmlTI27U="
+    }
+  }
+}
